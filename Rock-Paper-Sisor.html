@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Rock-Paper-Sisore
+    </title>
+    <link rel="stylesheet" href="Styles/Rock_paper_scissor.css">
+  </head>
+  <body>
+    <div style="width: 600px;">
+        <p style="font-size: 38px; font-weight: 700; margin-left: 79px;">Rock Paper Scissor</p>
+        <div style="display: flex;justify-content: space-between; padding-left: 13px; padding-right: 80px;">
+            <button class="play-icon" onclick="palyRock();
+            ">
+              <img class="play-icon-img" src="images/Rock-emoji.png" alt="Rock">
+            </button>
+            <button class="play-icon" onclick="palyPaper();
+            ">
+              <img class="play-icon-img" src="images/Paper-emoji.png" alt="Paper">
+            </button>
+            <button class="play-icon" onclick="palyScissor();
+            ">
+              <img class="play-icon-img" src="images/Scissor-emoji.png" alt="Scissor">
+            </button>
+        </div>
+        <p class="js-result" style="font-size: 33px; font-weight: 600;"></p>
+        <p class="js-move"></p>
+        <p class="js-score"></p>
+        <div>
+          <button class="reset-button" onclick="
+          caution();
+          ">Reset Score</button>
+          <button class="auto-play-button">Auto Play</button>
+        </div>
+    </div>
+    <div class="alert">
+      
+    </div>
+    <script src="script/Rock_paper_scissor.js"></script>
+  </body>
+</html>
